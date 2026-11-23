@@ -1,0 +1,158 @@
+[
+ {
+  "id": "Tutoriel",
+  "titre": "Tutoriel",
+  "emoji": "🎓",
+  "description": "Prendre en main Lean, l'infoview, et le système de vérification."
+ },
+ {
+  "id": "Gymnase",
+  "titre": "Gymnase",
+  "emoji": "🏋️",
+  "description": "Des petits exercices pour s'entraîner à une tactique ou un réflexe à la fois. Idéal pour débuter."
+ },
+ {
+  "id": "Logique",
+  "titre": "Logique",
+  "emoji": "🧠",
+  "description": "Implication, et, ou, non, quantificateurs… jusqu'au théorème de Cantor et à Diaconescu."
+ },
+ {
+  "id": "Naturels",
+  "titre": "Entiers naturels",
+  "emoji": "🔢",
+  "description": "Reconstruire ℕ depuis les axiomes de Peano : +, ×, ^, ≤, récurrence forte."
+ },
+ {
+  "id": "Fonctions",
+  "titre": "Fonctions & ensembles",
+  "emoji": "🔀",
+  "description": "Injections, surjections, ensembles, Knaster–Tarski, Cantor–Schröder–Bernstein."
+ },
+ {
+  "id": "Recurrence",
+  "titre": "Récurrence & sommes",
+  "emoji": "🪜",
+  "description": "Sommes classiques, Fibonacci, inégalités : la récurrence sous toutes ses formes."
+ },
+ {
+  "id": "Classiques",
+  "titre": "Classiques à visualiser",
+  "emoji": "🖼️",
+  "description": "Des faits de maths célèbres : d'abord se les représenter (dessin, intuition), puis les formaliser."
+ },
+ {
+  "id": "Listes",
+  "titre": "Listes",
+  "emoji": "📋",
+  "description": "Reconstruire les listes : concaténation, renversement, map, fold…"
+ },
+ {
+  "id": "Tris",
+  "titre": "Algorithmes de tri",
+  "emoji": "📊",
+  "description": "Tri par insertion, fusion, rapide : les programmer ET prouver qu'ils trient."
+ },
+ {
+  "id": "Algorithmes",
+  "titre": "Algorithmes & structures",
+  "emoji": "⚙️",
+  "description": "Exponentiation rapide, arbres de recherche, files, recherche dichotomique…"
+ },
+ {
+  "id": "Programmes",
+  "titre": "Programmes ludiques",
+  "emoji": "🕹️",
+  "description": "Des petits programmes à écrire ou à lire, puis à prouver : FizzBuzz, César, multiplication russe, racine carrée…"
+ },
+ {
+  "id": "Arithmetique",
+  "titre": "Arithmétique",
+  "emoji": "🔐",
+  "description": "Divisibilité, PGCD, nombres premiers, théorème fondamental, Fermat…"
+ },
+ {
+  "id": "Combinatoire",
+  "titre": "Combinatoire",
+  "emoji": "🧮",
+  "description": "Tiroirs, coefficients binomiaux, dénombrements, bijections."
+ },
+ {
+  "id": "Graphes",
+  "titre": "Graphes",
+  "emoji": "🕸️",
+  "description": "Degrés, chemins, coloriages, et les ponts de Königsberg d'Euler."
+ },
+ {
+  "id": "Constructions",
+  "titre": "Constructions de ℤ et ℚ",
+  "emoji": "🏗️",
+  "description": "Construire les entiers relatifs et les rationnels par quotients."
+ },
+ {
+  "id": "Analyse",
+  "titre": "Analyse",
+  "emoji": "📈",
+  "description": "Suites et limites sur les rationnels : unicité, somme, gendarmes, suites de Cauchy."
+ },
+ {
+  "id": "Algebre",
+  "titre": "Algèbre",
+  "emoji": "💎",
+  "description": "Groupes, sous-groupes, morphismes, anneaux : l'algèbre depuis les axiomes."
+ },
+ {
+  "id": "Matrices",
+  "titre": "Matrices",
+  "emoji": "🔲",
+  "description": "Les matrices 2×2 : produit, déterminant, inverse, et Fibonacci en accéléré."
+ },
+ {
+  "id": "Circuits",
+  "titre": "Binaire & circuits",
+  "emoji": "🔌",
+  "description": "Les nombres en binaire et les circuits qui calculent : additionneurs prouvés corrects."
+ },
+ {
+  "id": "Informatique",
+  "titre": "Informatique théorique",
+  "emoji": "💻",
+  "description": "Compilateurs prouvés, sémantique, expressions régulières, indécidabilité, λ-calcul."
+ },
+ {
+  "id": "Terminaison",
+  "titre": "Terminaison & récursion",
+  "emoji": "♻️",
+  "description": "Ackermann, McCarthy 91, Goodstein : quand prouver qu'un programme s'arrête devient dur."
+ },
+ {
+  "id": "Jeux",
+  "titre": "Théorie des jeux",
+  "emoji": "🎮",
+  "description": "Nim, stratégies gagnantes, théorème de Zermelo, équilibres de Nash."
+ },
+ {
+  "id": "Probabilites",
+  "titre": "Probabilités",
+  "emoji": "🎲",
+  "description": "Dés, Monty Hall, anniversaires, espérance : les probabilités par le dénombrement."
+ },
+ {
+  "id": "Enigmes",
+  "titre": "Énigmes",
+  "emoji": "🧩",
+  "description": "Chevaliers et menteurs, échiquier mutilé, tours de Hanoï, carrés magiques…"
+ },
+ {
+  "id": "Olympiades",
+  "titre": "Olympiades",
+  "emoji": "🏅",
+  "description": "Des problèmes de compétition mathématique (dont des IMO), formalisés."
+ },
+ {
+  "id": "Ouverts",
+  "titre": "Problèmes ouverts",
+  "emoji": "♾️",
+  "description": "Des énoncés que personne au monde ne sait prouver. Pour la gloire."
+ }
+]

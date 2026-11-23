@@ -1,0 +1,4 @@
+#!/bin/sh
+# La ligne de commande du parcours Lean. Essaie : ./parcours aide
+cd "$(dirname "$0")" || exit 1
+exec lake exe parcours "$@"

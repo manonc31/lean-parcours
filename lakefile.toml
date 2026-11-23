@@ -1,0 +1,28 @@
+name = "parcours"
+version = "1.0.0"
+defaultTargets = ["Exercices"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+# Outils internes : la commande #verifier et l'analyse des preuves.
+[[lean_lib]]
+name = "ParcoursOutils"
+roots = ["ParcoursOutils"]
+
+# TES exercices : c'est ici que tu travailles.
+[[lean_lib]]
+name = "Exercices"
+globs = ["Exercices.+"]
+
+# Solutions de référence (cachées dans VS Code, ne pas ouvrir sans raison !).
+[[lean_lib]]
+name = "Solutions"
+globs = ["Solutions.+"]
+
+# La commande `./parcours` (statut, arbre, indices, solutions…).
+[[lean_exe]]
+name = "parcours"
+root = "ParcoursCli"
+supportInterpreter = true

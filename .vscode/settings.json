@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "Solutions": true,
+    ".lake": true,
+    ".parcours": true,
+    "lake-manifest.json": true
+  },
+  "search.exclude": {
+    "Solutions": true,
+    ".lake": true,
+    ".parcours": true,
+    "progression.html": true
+  },
+  "files.watcherExclude": {
+    "**/.lake/**": true
+  },
+  "editor.renderWhitespace": "none",
+  "editor.wordWrap": "on"
+}

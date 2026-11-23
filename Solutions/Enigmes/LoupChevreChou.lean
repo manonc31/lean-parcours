@@ -1,0 +1,62 @@
+/- @parcours
+titre: Le loup, la chèvre et le chou
+difficulte: 2
+requiert: Logique.Bilan
+indice: Écris la liste des 8 états successifs (7 traversées). Il faut faire passer la chèvre en premier !
+indice: Solution : chèvre →, retour à vide, loup →, retour AVEC la chèvre, chou →, retour à vide, chèvre →.
+indice: Une fois la liste écrite, `decide` vérifie qu'elle est valide.
+-/
+import Solutions.Logique.Bilan
+
+/-!
+# Le loup, la chèvre et le chou
+
+Un fermier doit faire traverser une rivière à un loup, une chèvre et un chou. Sa barque ne peut
+porter que lui et **un** passager. Il ne faut jamais laisser seuls le loup et la chèvre (elle serait
+mangée), ni la chèvre et le chou. Énigme d'Alcuin d'York (VIIIᵉ siècle) !
+
+Un état indique la rive (`false` = départ, `true` = arrivée) du fermier, du loup, de la chèvre
+et du chou. Trouve une suite d'états valide, de « tous au départ » à « tous à l'arrivée ».
+
+## À faire
+`solution : List Etat` (à écrire !) et `solution_valide : Valide solution = true`
+-/
+
+namespace Parcours.Enigmes
+
+/-- (fermier, loup, chèvre, chou) : `false` = rive de départ, `true` = rive d'arrivée. -/
+abbrev Etat := Bool × Bool × Bool × Bool
+
+def sur (e : Etat) : Bool :=
+  let (f, l, c, x) := e
+  !(l == c && f != c) && !(c == x && f != c)
+
+/-- Le fermier traverse, seul ou avec un passager qui était sur sa rive. -/
+def traversee (e e' : Etat) : Bool :=
+  let (f, l, c, x) := e
+  let (f', l', c', x') := e'
+  f' != f &&
+    ((l' == l && c' == c && x' == x) ||
+     (l == f && l' == f' && c' == c && x' == x) ||
+     (c == f && c' == f' && l' == l && x' == x) ||
+     (x == f && x' == f' && l' == l && c' == c))
+
+def chemin : List Etat → Bool
+  | [] => true
+  | [e] => sur e
+  | e :: e' :: r => sur e && traversee e e' && chemin (e' :: r)
+
+def Valide (s : List Etat) : Bool :=
+  s.head? == some (false, false, false, false) && s.getLast? == some (true, true, true, true) && chemin s
+
+def solution : List Etat := -- @exo
+  [(false, false, false, false), (true, false, true, false), (false, false, true, false),
+   (true, true, true, false), (false, true, false, false), (true, true, false, true),
+   (false, true, false, true), (true, true, true, true)]
+
+theorem solution_valide : Valide solution = true := by -- @exo
+  decide
+
+end Parcours.Enigmes
+
+#verifier

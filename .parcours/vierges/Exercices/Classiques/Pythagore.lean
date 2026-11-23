@@ -1,0 +1,35 @@
+import Exercices.Arithmetique.Definitions
+
+/-!
+# Fabriquer des triangles rectangles
+
+## Se le représenter
+`3² + 4² = 5²`, `5² + 12² = 13²`, `8² + 15² = 17²`… Euclide a trouvé une machine à fabriquer des
+triplets de Pythagore : pour tous `m > n`, `(m² − n², 2mn, m² + n²)` en est un.
+
+## À prouver
+`euclide_pythagore (m n : Int) : (m ^ 2 - n ^ 2) ^ 2 + (2 * m * n) ^ 2 = (m ^ 2 + n ^ 2) ^ 2`, et `trois_quatre_cinq`
+
+## Ressources
+- [Triplet pythagoricien (Wikipédia)](https://fr.wikipedia.org/wiki/Triplet_pythagoricien)
+
+---
+*Exercice* `Classiques.Pythagore` · difficulté ★★☆☆☆
+
+💡 Indices : `./parcours indice Classiques.Pythagore` · ✅ Vérification : regarde le message de `#verifier` tout en bas du fichier (dans l'infoview), ou lance `./parcours verifier`.
+-/
+
+namespace Parcours.Classiques
+
+open Parcours.Recurrence
+
+theorem euclide_pythagore (m n : Int) :
+    (m ^ 2 - n ^ 2) ^ 2 + (2 * m * n) ^ 2 = (m ^ 2 + n ^ 2) ^ 2 := by
+  sorry
+
+theorem trois_quatre_cinq : (3 : Nat) ^ 2 + 4 ^ 2 = 5 ^ 2 := by
+  sorry
+
+end Parcours.Classiques
+
+#verifier

@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Parcours : vérifier ma progression",
+      "type": "shell",
+      "command": "./parcours verifier",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Parcours : que faire maintenant ?",
+      "type": "shell",
+      "command": "./parcours",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Parcours : ouvrir la carte",
+      "type": "shell",
+      "command": "./parcours carte",
+      "presentation": { "reveal": "silent" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Parcours : l'arbre complet",
+      "type": "shell",
+      "command": "./parcours arbre",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Parcours : indice pour ce fichier",
+      "type": "shell",
+      "command": "./parcours indice '${relativeFile}'",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}

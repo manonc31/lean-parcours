@@ -1,0 +1,186 @@
+{
+ "base": [
+  "congrArg",
+  "congrFun",
+  "congrFun'",
+  "congr",
+  "Eq.trans",
+  "Eq.symm",
+  "Eq.mpr",
+  "Eq.mp",
+  "Eq.subst",
+  "Eq.substr",
+  "Eq.refl",
+  "rfl",
+  "eq_self",
+  "of_eq_true",
+  "eq_true",
+  "eq_false",
+  "of_eq_false",
+  "eq_self_iff_true",
+  "ne_eq",
+  "noConfusion_of_Nat",
+  "of_decide_eq_true",
+  "of_decide_eq_false",
+  "decide_eq_true",
+  "decide_eq_false",
+  "trivial",
+  "funext",
+  "propext",
+  "Iff.mp",
+  "Iff.mpr",
+  "Iff.intro",
+  "And.left",
+  "And.right",
+  "And.intro",
+  "Or.elim",
+  "Or.inl",
+  "Or.inr",
+  "Exists.elim",
+  "Exists.intro",
+  "absurd",
+  "False.elim",
+  "Classical.em",
+  "Classical.byContradiction",
+  "id",
+  "implies_congr",
+  "forall_congr",
+  "HEq.refl",
+  "eq_of_heq",
+  "heq_of_eq",
+  "cast_eq",
+  "Eq.mpr_prop",
+  "Eq.mpr_not",
+  "iff_self",
+  "Subtype.ext",
+  "Quot.sound",
+  "Quotient.sound",
+  "Quot.ind",
+  "Quotient.ind",
+  "Quotient.inductionOn",
+  "Quotient.exact",
+  "Nat.le.refl",
+  "Nat.le.step",
+  "WellFounded.fix_eq",
+  "Nat.lt_wfRel",
+  "sizeOf_nat",
+  "Classical.choose_spec",
+  "Classical.choose",
+  "Classical.indefiniteDescription",
+  "Nonempty.intro",
+  "Function.comp",
+  "Quotient.lift_mk",
+  "Quot.lift",
+  "Quotient.mk"
+ ],
+ "jetons": [
+  {
+   "nom": "logique",
+   "description": "Les lemmes de logique de la bibliothèque (and_comm, not_not, forall_and…), et la tactique simp sur les connecteurs.",
+   "motifs": [
+    "*"
+   ],
+   "sauf": [
+    "Nat",
+    "Int",
+    "Fin",
+    "List",
+    "Array",
+    "Vector",
+    "Subarray",
+    "String",
+    "Char",
+    "BitVec",
+    "UInt8",
+    "UInt16",
+    "UInt32",
+    "UInt64",
+    "USize",
+    "Int8",
+    "Int16",
+    "Int32",
+    "Int64",
+    "Float",
+    "Float32",
+    "Rat",
+    "Lean",
+    "Std",
+    "ByteArray",
+    "Substring"
+   ]
+  },
+  {
+   "nom": "Nat",
+   "description": "Les lemmes sur Nat, Int et Fin de la bibliothèque (sauf divisibilité/pgcd/premiers), et la tactique omega.",
+   "motifs": [
+    "Nat",
+    "Int",
+    "Fin",
+    "Lean.Omega",
+    "Decidable.byContradiction",
+    "le_of_le_of_eq",
+    "lt_of_lt_of_eq",
+    "le_of_eq_of_le",
+    "lt_of_eq_of_lt",
+    "Decidable.decide"
+   ],
+   "sauf": [
+    "*dvd*",
+    "*gcd*",
+    "*lcm*",
+    "*oprime*",
+    "*rime*",
+    "*factor*"
+   ]
+  },
+  {
+   "nom": "anneau",
+   "description": "La tactique grind (et son solveur d'anneaux commutatifs) : les calculs comme (a+b)² se font tout seuls.",
+   "motifs": [
+    "Lean.Grind",
+    "Std"
+   ],
+   "sauf": []
+  },
+  {
+   "nom": "divisibilite",
+   "description": "Les lemmes de la bibliothèque sur la divisibilité, Nat.gcd, Nat.lcm.",
+   "motifs": [
+    "*dvd*",
+    "*gcd*",
+    "*lcm*",
+    "*oprime*",
+    "*rime*",
+    "*factor*"
+   ],
+   "sauf": []
+  },
+  {
+   "nom": "Rat",
+   "description": "Les lemmes de la bibliothèque sur les rationnels de Lean (Rat).",
+   "motifs": [
+    "Rat"
+   ],
+   "sauf": []
+  },
+  {
+   "nom": "List",
+   "description": "Tous les lemmes sur List (et Array) de la bibliothèque.",
+   "motifs": [
+    "List",
+    "Array",
+    "Vector",
+    "Subarray"
+   ],
+   "sauf": []
+  },
+  {
+   "nom": "tout",
+   "description": "Toute la bibliothèque de Lean, y compris grind.",
+   "motifs": [
+    "*"
+   ],
+   "sauf": []
+  }
+ ]
+}
